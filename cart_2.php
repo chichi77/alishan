@@ -61,12 +61,17 @@ $(function(){
 		        error.insertAfter($('input[name=' + eid + ']:last').parent('label'));
 		    }
 		    else {
-		        error.insertAfter(element);
 		    }
 		},
 		submitHandler: function(form) {
 	    alert('submit');
 	  }
+	});
+
+	$('.ws-date').each(function(index, el) {
+		var date_name = $(this).prev('input[type="date"]').attr('name');
+		$(this).attr('name', date_name);
+		console.log(date_name);
 	});
 })
 </script>
@@ -91,6 +96,7 @@ $(function(){
 			</div>
 		</div>
 		<form class="cart_inner" name="postForm" id="postForm" action="cart_3.php">
+			<input type="text" value="<?php echo $_GET['type']; ?>" name="type" hidden>
 			<div class="cart_simple">
 				<div class="cart_simple_inner">
 					<div class="item_img" style="background-image: url('images/product_02.png');"></div>
@@ -232,7 +238,7 @@ $(function(){
 							<input type="date" placeholder="出生年/月/日" name="adult_1_birth" class="required">
 						</div>
 					</div>
-					<!--<div class="form_inner">
+					<div class="form_inner">
 						<div class="form_title">成人2</div>
 						<div class="form_input">
 							<input type="text" placeholder="姓名" name="adult_2_name" class="required">
@@ -248,7 +254,7 @@ $(function(){
 							<input type="date" placeholder="出生年/月/日" name="adult_2_birth" class="required">
 						</div>
 					</div>
-					<div class="form_inner">
+					<!--<div class="form_inner">
 						<div class="form_title">成人3</div>
 						<div class="form_input">
 							<input type="text" placeholder="姓名" name="adult_3_name" class="required">
