@@ -130,3 +130,4 @@
 		<a href=""><i class="fab fa-whatsapp"></i></a>
 	</div>
 </div>
+<script src="js/date-input-polyfill.dist.js"></script>

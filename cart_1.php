@@ -168,7 +168,7 @@ $(function(){
 							<span>*幼兒：0~2歲（不含餐食、不佔車位、不佔床位）</span>
 						</div>
 						<div class="form_info">
-							<div class="title">人數</div>
+							<div class="title">人數 / 位</div>
 							<div class="form_input">
 								<label>
 									<span>成人</span>
@@ -220,13 +220,13 @@ $(function(){
 							</div>
 						</div>
 						<div class="form_info single_input" data-type="2">
-							<div class="title">車子數量</div>
+							<div class="title">車子數量 / 輛</div>
 							<div>
 								<input type="number" min="1" value="1" class="required" name="car_num">
 							</div>
 						</div>
 						<div class="form_info" data-type="1">
-							<div class="title">房型</div>
+							<div class="title">房型 / 間</div>
 							<div class="form_input">
 								<label>
 									<span>單人房</span>

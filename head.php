@@ -35,24 +35,6 @@ $description="阿里山旅遊相關行程已開放預訂，如欲至阿里山旅
 
 <script src="js/jquery-ias.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
-<!--解決IE input type="date"的使用-->
-<!-- cdn for modernizr, if you haven't included it already -->
-<script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
-<!-- polyfiller file to detect and load polyfills -->
-<script src="http://afarkas.github.io/webshim/js-webshim/minified/polyfiller.js"></script>
-<script>
-  //webshims.setOptions('waitReady', false);
-  webshim.setOptions("forms-ext", {
-	replaceUI: "auto",
-	types: "date",
-	date: {
-		startView: 2,
-		openOnFocus: true
-	}
-});
-  webshims.polyfill('forms forms-ext');
-</script>
 <script>
 $(function(){
 	var url = location.pathname;
@@ -70,17 +52,17 @@ $(function(){
 
 	//slide-in
 	var item=$('.slide-in');
-    for(let i=0; i<item.length; i++){
-        const slideAt = $(window).innerHeight() + $(window).scrollTop();
-        const imageBottom = item.eq(i).offset().top + item.eq(i).height();
-        const isHalfShown = slideAt > item.eq(i).offset().top;
-        const isNotScrolledPast = $(window).scrollTop() < imageBottom;
-        if (isHalfShown && isNotScrolledPast) {
-            item.eq(i).addClass('active');
-        } else {
-            item.eq(i).removeClass('active');
-        }
-    }
+  for(let i=0; i<item.length; i++){
+      const slideAt = $(window).innerHeight() + $(window).scrollTop();
+      const imageBottom = item.eq(i).offset().top + item.eq(i).height();
+      const isHalfShown = slideAt > item.eq(i).offset().top;
+      const isNotScrolledPast = $(window).scrollTop() < imageBottom;
+      if (isHalfShown && isNotScrolledPast) {
+          item.eq(i).addClass('active');
+      } else {
+          item.eq(i).removeClass('active');
+      }
+  }
 
 	//header main menu icon click
 	$('.header_icon .menu_icon').click(function(event) {
