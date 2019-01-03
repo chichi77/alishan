@@ -10,7 +10,7 @@
 				<a class="search_click">探索目的地</a>
 			</li>
 			<li>
-				<a>旅遊類型</a>
+				<a>旅遊天數</a>
 				<ul>
 					<li><a href="product_travel.php">一日遊</a></li>
 					<li><a href="product_travel.php">二日遊</a></li>
@@ -28,6 +28,13 @@
 					<li><a href="m_order.php">查詢/取消更改</a></li>
 					<li><a href="m_points.php">查詢/兌換紅利</a></li>
 				</ul>
+			</li>
+			<li class="visible-xs">
+				<select name="header_money">
+					<option value="">台幣</option>
+					<option value="">韓元</option>
+					<option value="">人民幣</option>
+				</select>
 			</li>
 		</ul>
 		<div class="header_search_menu">

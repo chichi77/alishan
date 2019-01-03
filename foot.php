@@ -34,7 +34,7 @@
 							<a href="product_travel.php">主題行程</a>
 						</li>
 						<li>
-							<a href="hotel.php">住宿資訊</a>
+							<a href="hotel.php">旅遊資訊</a>
 						</li>
 						<li>
 							<a href="product_car.php">包車服務</a>
