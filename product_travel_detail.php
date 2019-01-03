@@ -221,7 +221,7 @@ $(function(){
 					<div class="product_cart">
 						<form class="cart_item" id="postForm" name="postForm" action="cart_1.php">
 							<div class="tip">開放日期：2018/03/01 ~ 2018/12/31</div>
-							<input type="date" name="date" value="<?php echo date('Y-m-d'); ?>" min="<?php echo date('Y-m-d'); ?>" max="2018-12-31">
+							<input type="date" name="date" value="<?php echo date('Y-m-d'); ?>" min="<?php echo date('Y-m-d'); ?>">
 							<select name="time">
 								<option>8:00 A.M.</option>
 								<option>10:00 A.M.</option>
